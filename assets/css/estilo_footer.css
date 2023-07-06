@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root{
+    --color_text: #000000;
+    --bg_green: #78CF2B;
+    --color_white: #ffffff;
+    --bg_footer: #88EC5C;
+}
+
+footer{
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 20px;
+}
+
+.footer_menu{
+    text-decoration: none;
+    color: var(--color_text);
+    transition: 0.5s;
+}
+
+.footer_menu:hover{
+    background-color: var(--bg_green);
+    color: var(--color_white);
+    transition: 0.5s;
+    padding: 0.5rem;
+}
+
+.footer_content{
+    background-color: var(--bg_footer);
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 3rem 3.5rem;
+}
+
+.footer_list{
+    margin-bottom: 0.75rem;
+}
+
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer_list .footer_link{
+    color: var(--color_text);
+}
+
+#footer_social_media{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem; 
+    color: var(--color_text);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#footer_social_media .footer_link i{
+    font-size: 1.35rem;
+}
+
+.footer_link{
+    background-color: var(--color_white);
+    text-decoration: none;
+}
+
+#footer_social_media .footer_link:hover{
+    transition: 0.5s;
+}
+
+
+#footer_social_media .footer_link:hover{
+    background-color: var(--bg_green);
+    color: var(--color_white);
+    transition: 0.5s;
+    padding: 0.3rem;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg_green);
+}
+
+@media(max-width: 1024px){
+    .footer_content{
+        font-size: 17px;
+        height: 115px;
+    }
+
+    #footer_copyright{
+        font-size: 17px;
+    }
+}
+
+
+@media(max-width: 768px){
+    .footer_content{
+        font-size: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        padding-bottom: 50px;
+        height: 230px;
+        padding-top: 45px;
+    }
+
+    #footer_copyright{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 450px){
+
+    .footer_content{
+        font-size: 13px;
+    }
+
+    #footer_copyright{
+        font-size: 13px;
+    }
+}

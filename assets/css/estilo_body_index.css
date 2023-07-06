@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root{
+    --green_opt_01: #88EC5C;
+    --green_opt_02: #78CF2B;
+    --btt_hover_01: #77ff00;
+    --btt_hover_02: #3f552c;
+    --green_hover_before: #77fe00;
+    --pink_bg_fut_fem: #f8b4ac;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container_header{
+    display: flex;
+}
+
+.container_01{
+    background-color: var(--green_opt_01);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.introd h1{
+    margin: 0;
+    font-size: 140px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img_bg img{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+
+.container_tit_white{
+    font-family: 'Montserrat', sans-serif;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_content01{
+    display: flex;
+    flex-direction: column;
+}
+
+.text_hor{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+    padding: 40px;
+}
+
+.img_ing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_tit_green01{
+    font-family: 'Montserrat', sans-serif;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green_opt_02);
+}
+
+.container_content_green01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green_opt_02);
+    padding-bottom: 25px;
+}    
+
+.img_copa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_ver{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: justify;
+    padding: 40px;
+}
+
+.container_content_text_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_tit_green02{
+    font-family: 'Montserrat', sans-serif;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green_opt_01);
+}
+
+.img_copa{
+   height: 750px;
+}
+
+.tabela_campeoes{
+    background-color: var(--green_opt_01);
+    height: 1800px;
+}
+
+.tab_camp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab_camp table{
+    margin-top: 70px;
+    font-family:'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+table, td, th{
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100vh;
+    box-shadow: 20px 30px 20px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+th{
+    background-color: var(--green_opt_02);
+}
+
+tr:hover{
+    background-color: var(--green_opt_02);
+}
+
+.text-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_btt{
+    font-family:'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.btt{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 7px;
+    overflow: hidden;   
+    align-items: center;
+    justify-content: center; 
+}
+
+.btt::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(var(--btt_hover_01), var(--btt_hover_02));
+    animation: efeito 1.3s ease infinite;
+    transition: 1s ease;
+}
+
+@keyframes efeito{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.text-button:hover .btn::before{
+    background: var(--green_hover_before);
+}
+
+#btt_selecao{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 147px;
+    height: 52px;
+    background: var(--green_opt_02);
+    text-align: center;
+    line-height: 52px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.img_torcida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.img_fut_brasil img{
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.img_fut_brasil p{
+    text-align: center;
+    margin-top: 0;
+}
+
+.bg_fut_fem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink_bg_fut_fem);
+}
+
+.container_tit_green03{
+    font-family: 'Montserrat', sans-serif;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink_bg_fut_fem);
+}
+
+
+
+@media(max-width: 1260px) {
+    .introd h1{
+        font-size: 120px;
+    }   
+
+    .container_content_green01{
+        flex-direction: column;
+    }
+
+    .bg_fut_fem img{
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .img_fut_fem img{
+        padding-bottom: 50px;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .introd h1{
+        font-size: 100px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .container_01{
+        height: 500px;
+    }
+
+    .container_content_text_img{
+        flex-direction: column;
+    }
+
+    table{
+        width: 60vh;
+    }
+
+    .tabela_campeoes{
+        height: 1950px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .introd h1{
+        font-size: 80px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    .text_hor p{
+        font-size: 25px;
+    }
+
+    .text_ver p{
+        font-size: 25px;
+    }
+
+    .text_btt p{
+        font-size: 20px;
+    }
+
+    table{
+        width: 40vh;
+    }
+
+     .tabela_campeoes{
+        height: 2050px;
+    }
+
+}
+
+@media(max-width: 650px) {
+    
+    .introd h1{
+        font-size: 60px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .text_hor p{
+        font-size: 18px;
+    }
+
+    .text_ver p{
+        font-size: 18px;
+    }
+
+    .text_btt p{
+        font-size: 18px;
+        padding-left: 25px;
+    }
+
+    .img_copa img{
+        width: 525px;
+    }
+
+    table{
+        width: 50%;
+    }
+
+    .tab_camp table{
+        font-size: 18px;
+    }
+
+    .tabela_campeoes{
+        height: 1650px;
+    }
+
+    .img_ing img{
+        width: 100%;
+    }
+
+    .img_pop img{
+        width: 100%;
+    }
+
+    .img_copa img{
+        width: 100%;
+    }
+
+    .img_fut_brasil img{
+        width: 250px;
+    }
+
+    .img_fut_fem img{
+        width: 100%;
+    }
+
+    .img_torcida img{
+        width: 100%;
+    }
+
+    .text_hor{
+        margin-bottom: 100px;
+        padding: 20px;
+
+    }
+}
+
+@media(max-width: 550px) {
+
+    .container_01{
+        height: 300px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .introd h1{
+        font-size: 45px
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .text_hor p{
+        font-size: 15px;
+    }
+
+    .text_ver p{
+        font-size: 15px;
+    }
+
+    .text_btt p{
+        font-size: 15px;
+    }
+}
+
+
+
+
